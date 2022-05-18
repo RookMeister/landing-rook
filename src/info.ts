@@ -3,8 +3,8 @@ export const leftSide = {
 	information: {
 		titleBlock: 'Информация',
 		status: 'Не ищу',
-		avatar: '/resume/avatar.jpg',
-		bg: '/resume/frontend.png',
+		avatar: 'avatar.jpg',
+		bg: 'frontend.png',
 		name: 'Хмель Артём',
 		title: 'Frontend-разработчик, Vue JS',
 		array: [
