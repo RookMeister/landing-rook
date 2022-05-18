@@ -1,0 +1,69 @@
+<script setup lang="ts">
+import LeftSideVue from './components/LeftSide.vue';
+import RightSideVue from './components/RightSide.vue';
+</script>
+
+<template>
+  <main class="main-container">
+    <div class="grid gap-5 lg:grid-cols-3">
+      <LeftSideVue />
+      <RightSideVue />
+    </div>
+  </main>
+</template>
+
+<style>
+.main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 640px;
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .main-container {
+    max-width: 1536px;
+  }
+}
+
+.block-section {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.block-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+</style>
