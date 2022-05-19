@@ -36,7 +36,7 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
       </ul>
     </div>
 
-    <div v-for="block in about.blocks" :key="block.slug">
+    <div v-for="block in about.blocks" :key="block.slug" class="space-y-5">
       <div v-for="item in about[block.slug]" :class="{'hidden': item.is !== activeBlock}" :key="item.titleBlock" class="p-7 block-section print:block">
         <h2 class="block-title">{{ item.titleBlock }}</h2>
         <div class="mb-5 item-section" v-for="(block, i) in item.blocks" :key="block.title">
