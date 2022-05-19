@@ -1,7 +1,7 @@
 
-<script setup>
-import { leftSide } from '../info';
-const { information, skills } = leftSide;
+<script lang="ts" setup>
+const props = defineProps<{ leftSide: any }>()
+const { information, skills } = props.leftSide;
 </script>
 
 <template>

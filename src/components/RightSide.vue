@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { rightSide } from '../info';
-
-const { about } = rightSide;
+const props = defineProps<{ rightSide: any }>()
+const { about } = props.rightSide;
 const hash = document.location.hash.split('#')
 const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
 </script>

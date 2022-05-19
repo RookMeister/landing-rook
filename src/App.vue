@@ -1,13 +1,35 @@
 <script setup lang="ts">
+// import 'dotenv/config';
+
+
 import LeftSideVue from './components/LeftSide.vue';
 import RightSideVue from './components/RightSide.vue';
+import { ref } from 'vue';
+
+const leftSideData = ref<any>(null);
+const rightSideData = ref<any>(null);
+
+fetch(import.meta.env.VITE_JSON_URL, {
+  method: "GET",
+  headers: {
+    "Accept": "*/*",
+    "X-Master-Key": '$2b$10$' + import.meta.env.VITE_JSON_KEY
+    }
+}).then(function(response) {
+  return response.json();
+}).then(function(data) {
+  const { record: { leftSide, rightSide } } = data;
+  leftSideData.value = leftSide;
+  rightSideData.value = rightSide;
+})
+
 </script>
 
 <template>
   <main class="main-container">
     <div class="grid gap-5 lg:grid-cols-3">
-      <LeftSideVue />
-      <RightSideVue />
+      <LeftSideVue v-if="leftSideData" :left-side="leftSideData" />
+      <RightSideVue v-if="rightSideData" :right-side="rightSideData" />
     </div>
   </main>
 </template>
