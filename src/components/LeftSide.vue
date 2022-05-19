@@ -5,16 +5,16 @@ const { information, skills } = leftSide;
 </script>
 
 <template>
-  <div class="space-y-5">
+  <div class="space-y-5 print:hidden">
     <div class="shadow rounded-xl overflow-hidden">
       <div class="h-32 bg-auto bg-center" :style="`background-image: url('${information.bg}')`">
       </div>
       <div class="pt-14 p-7 bg-white relative">
         <span class="status-badge bg-gray-400">{{ information.status }}</span>
-        <a href="/personal_cv/"><img :src="information.avatar" alt="Avatar" class="user-photo"></a>
+        <img :src="information.avatar" alt="Avatar" class="user-photo">
         <div class="text-lg font-semibold mb-1.5">{{ information.name }}</div>
         <div class="text-sm text-gray-400 mb-7">{{ information.position }}</div>
-        <div class="flex group">
+        <div class="flex group print:hidden">
           <button class="download-btn">Скачать CV</button>
           <button class="download-btn-icon">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"

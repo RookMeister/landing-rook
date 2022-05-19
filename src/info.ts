@@ -15,14 +15,14 @@ export const leftSide = {
 	},
 	skills: {
 		titleBlock: 'Навыки',
-		array: ['HTML/CSS', 'JavaScript', 'Typescript', 'Vue', 'Vue Router', 'Vuex', 'Nuxt', 'Node.js', 'Git', 'Telegraf']
+		array: ['HTML/CSS', 'JavaScript', 'Typescript', 'Vue', 'Vue Router', 'Vuex', 'Nuxt', 'Docker', 'Node.js', 'Git', 'Telegraf', 'Socket.IO']
 	}
 }
 
 export const rightSide = {
 	about: {
 		titleBlock: 'Обо мне',
-		bio: 'Я занимаюсь frontend разработкой уже 5 лет и всё это время я работаю со Vue Js. Рассматриваю предложения связанные с экосистемой Vue. Есть опыт и backend разработки с использованием nodejs и mongo. Был опыт в построении UI Kit. Есть опыт связанный с Telegram Bot. Готов к перезду (предпочитаемый вариант). На данный момент хочу и дальше развиваться как frontend специалист. Люблю делать интерфейсы.',
+		bio: 'Я занимаюсь frontend разработкой уже 5 лет и всё это время я работаю со Vue Js. Рассматриваю предложения связанные с экосистемой Vue. Есть опыт и backend разработки с использованием nodejs и mongo. Был опыт в построении UI Kit. Есть опыт связанный с Telegram Bot. Готов к перезду (предпочитаемый вариант). На данный момент хочу и дальше развиваться как frontend специалист. Люблю создавать интерфейсы.',
 		mail: 'artemhmelwork@gmail.com',
 		socials: [
 			{ service: 'telegram', link: 'https://t.me/RookMeister' },
@@ -44,7 +44,7 @@ export const rightSide = {
 						descriptions: [
 							{ title: '', text: 'Был одним из основным разработчиком платформы КТТС, площадка объявлений игровых услуг.' },
 							{ title: 'Достижения', text: '<ul class="list-disc ml-5"><li>Занимался всем с нуля.</li><li>Участвовал в написании бекенд методов</li><li>Был написан чат (Бекенд, Фронтенд) с использованием Mongo и WebSokets</li></ul>' },
-							{ title: 'Технологии', text: 'Vue, Nodejs, Mongo, Typescript, Nuxt, Koa, Redis, WebSokets, Docker' }
+							{ title: 'Технологии', text: 'Vue, Nodejs, Mongo, Typescript, Nuxt, Koa, Redis, Socket.IO, Docker' }
 						],
 						period: 'Май 2021 — Январь 2022', timeJob: 'Part time'
 					},
@@ -85,6 +85,9 @@ export const rightSide = {
 			{
 				titleBlock: 'Проекты', is: 'project', slug: 'project',
 				blocks: [
+					{
+						logoUrl: 'https://s5o.ru/storage/dumpster/2/c6/f6c354462b412307fe0f689b3733b.png', nameSubject: 'Bot', location: 'Создатель', title: 'Неофициальный Бот Sport.Ru', link: 'http://t.me/sportsru_football_noofficial_bot', descriptions: [{ title: '', text: 'Бот с помощью которого можно следить за расписанием и результатом футбольных матчей и обзорами к ним.' }]
+					},
 					{
 						logoUrl: 'https://kt.tc/images/logo/android/android-chrome-192x192.svg', nameSubject: 'E-commerce', location: 'Разработчик', title: 'КТТС Маркет', link: 'https://kt.tc', descriptions: [{ title: '', text: 'КТТС Маркет - Маркетплейс для геймеров' }]
 					}
