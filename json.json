@@ -2,7 +2,7 @@
   "leftSide": {
     "information": {
       "titleBlock": "Информация",
-      "status": "Не ищу",
+      "status": "",
       "avatar": "avatar.jpg",
       "bg": "frontend.png",
       "name": " Хмель Артём",
