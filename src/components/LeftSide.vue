@@ -6,18 +6,17 @@ const { information, skills } = props.leftSide;
 
 <template>
   <div class="space-y-5 print:hidden">
-    <div class="shadow rounded-xl overflow-hidden">
-      <div class="h-32 bg-auto bg-center" :style="`background-image: url('${information.bg}')`">
-      </div>
-      <div class="pt-14 p-7 bg-white relative">
-        <span class="status-badge bg-gray-400">{{ information.status }}</span>
+    <div class="block-section overflow-hidden">
+      <div class="h-32 bg-auto bg-center" :style="`background-image: url('${information.bg}')`" />
+      <div class="pt-14 p-7 relative">
+        <span class="status-badge">{{ information.status }}</span>
         <img :src="information.avatar" alt="Avatar" class="user-photo">
         <div class="text-lg font-semibold mb-1.5">{{ information.name }}</div>
         <div class="text-sm text-gray-400 mb-7">{{ information.position }}</div>
         <div class="flex group print:hidden">
           <button class="download-btn">Скачать CV</button>
           <button class="download-btn-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            <svg class="h-6 w-6" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
@@ -28,7 +27,7 @@ const { information, skills } = props.leftSide;
     </div>
 
     <div class="p-7 block-section">
-      <h2 class="block-title">{{ information.titleBlock }}</h2>
+      <h2>{{ information.titleBlock }}</h2>
       <div class="space-y-4">
         <div class="flex justify-between" v-for="{ title, text } in information.array" :key="title">
           <div class="text-gray-400">{{ title }}</div>
@@ -38,7 +37,7 @@ const { information, skills } = props.leftSide;
     </div>
 
     <div class="p-7 block-section">
-      <h2 class="block-title">{{ skills.titleBlock }}</h2>
+      <h2>{{ skills.titleBlock }}</h2>
       <div class="-m-2 flex flex-wrap">
         <span class="skill-tag" v-for="item in skills.array" :key="item">{{ item }}</span>
       </div>
@@ -80,9 +79,8 @@ const { information, skills } = props.leftSide;
 
 .status-badge {
   border-radius: 9999px;
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-weight: var(--tp-font-weight-semi-bold-text);
+  font-size: var(--tp-font-size-caption-text);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.125rem;
@@ -90,8 +88,8 @@ const { information, skills } = props.leftSide;
   position: absolute;
   top: 1rem;
   right: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color: #ede9fe;
+  color: #8b5cf6;
   text-transform: uppercase;
 }
 

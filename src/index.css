@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --tp-font-weight-bold-text: 700;
+  --tp-font-weight-semi-bold-text: 600;
+  --tp-font-weight-medium-text: 500;
+  --tp-font-weight-regular-text: 400;
+
+  --tp-font-size-main-text: 16px;
+  --tp-letter-spacing-main-text: 0.5px;
+
+  --tp-font-size-additional-text: 14px;
+  --tp-letter-spacing-additional-text: 0.25px;
+
+  --tp-font-size-caption-text: 12px;
+  --tp-letter-spacing-caption-text: 0.4px;
+}
+
+
+.light {
+  --tp-primary-color-text: #0F1111;
+  --tp-secondary-color-text: #485656;
+  --tp-tertiary-color-text: #627070;
+
+  --tp-primary-background-color: #F5F5F5;
+  --tp-secondary-background-color: #FFFFFF;
+  --tp-tertiary-background-color: #EDF3F3;
+
+  --tp-primary-border-color: #EAEAEA;
+}
+.dark {
+  --tp-primary-color-text: #EEF2F1;
+  --tp-secondary-color-text: #C5D3D3;
+  --tp-tertiary-color-text: #768787;
+
+  --tp-primary-background-color: #0D1212;
+  --tp-secondary-background-color: #181D1C;
+  --tp-tertiary-background-color: #212828;
+
+  --tp-primary-border-color: #252525;
+}
+
+
+/* @media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; }
+} */
+
+
+html {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  /* font-family: var(--font-family); */
+  font-size: var(--tp-font-size-main-text);
+  font-weight: var(--tp-font-weight-regular-text);
+  /* line-height: var(--tp-line-height-primary-text); */
+  color: var(--tp-primary-color-text);
+  background: var(--tp-primary-background-color);
+  transition: background-color .2s ease-in-out;
+  /* letter-spacing: var(--tp-letter-spacing-main-text); */
+  text-align: left;
+}
+
+h6 {
+  
+}

@@ -34,7 +34,7 @@ fetch(import.meta.env.VITE_JSON_URL, {
   </main>
 </template>
 
-<style>
+<style lang="less">
 .main-container {
   width: 100%;
   margin-left: auto;
@@ -74,18 +74,19 @@ fetch(import.meta.env.VITE_JSON_URL, {
   }
 }
 
+
 .block-section {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: var(--tp-secondary-background-color);
   border-radius: 0.75rem;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  h2 {
+    font-weight: var(--tp-font-weight-bold-text);
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
-.block-title {
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  margin-bottom: 1.25rem;
-}
+
 </style>

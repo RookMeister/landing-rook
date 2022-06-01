@@ -9,8 +9,13 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
 <template>
   <div class="space-y-5 lg:col-span-2">
     <div class="p-7 pb-0 block-section">
-      <h2 class="block-title">{{ about.titleBlock }}</h2>
+      <h2>{{ about.titleBlock }}</h2>
       <p class="text-gray-600 mb-5">{{ about.bio }}</p>
+      <div class="flex flex-col items-center">
+        <img src ="https://github-readme-stats.vercel.app/api?username=rookmeister&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
+        <img src ="https://github-readme-stats.vercel.app/api/top-langs/?username=rookmeister&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
+        <img src ="https://github-readme-streak-stats.herokuapp.com?user=rookmeister&theme=darcula&hide_border=true&background=FFFFFF00">
+      </div>
       <div class="flex flex-col space-y-4">
         <a :href="`mailto:${about.mail}`" class="mail-link social-link-hover">
           <i class="bx bx-at text-xl"></i>
@@ -37,7 +42,7 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
 
     <div v-for="block in about.blocks" :key="block.slug" class="space-y-5">
       <div v-for="item in about[block.slug]" :class="{'hidden': item.is !== activeBlock}" :key="item.titleBlock" class="p-7 block-section print:block">
-        <h2 class="block-title">{{ item.titleBlock }}</h2>
+        <h2>{{ item.titleBlock }}</h2>
         <div class="mb-5 item-section" v-for="(block, i) in item.blocks" :key="block.title">
           <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-cover print:hidden" :style="`background-image: url('${block.logoUrl}');`" />
           <div class="w-full space-y-5">
@@ -107,14 +112,14 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
             </div>
             <a v-if="block.link"
               target="blank" :href="block.link"
-              class="inline-flex items-center space-x-3 px-3.5 py-1.5 rounded-lg group border border-purple-500 bg-white text-purple-500 text-sm font-medium transition duration-200 hover:border-purple-600 hover:text-white hover:bg-purple-600">
+              class="link-project ">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
                 </path>
               </svg>
-              <span>{{ block.link }}</span>
+              <span class="text-ellipsis overflow-hidden">{{ block.link }}</span>
             </a>
             <div v-if="i !== item.blocks.length - 1" class="border-b border-gray-200"></div>
           </div>
@@ -145,6 +150,12 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
 </template>
 
 <style>
+.link-project {
+  @apply inline-flex items-center space-x-3 px-3.5 py-1.5 rounded-lg border border-purple-500 bg-white text-purple-500 text-sm font-medium transition duration-200 hover:border-purple-600 hover:text-white hover:bg-purple-600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
 .item-section > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -176,9 +187,8 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
 .item-header-info {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-weight: 500;  font-weight: var(--tp-font-weight-medium-text);
+  font-size: var(--tp-font-size-additional-text);
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
