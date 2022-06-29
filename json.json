@@ -102,7 +102,7 @@
             },
             {
               "logoUrl": "https://hyperauto.ru/hyperauto-favicon.svg",
-              "nameSubject": "ООО Сократ маркетинг",
+              "nameSubject": "Сократ маркетинг",
               "location": "Владивосток",
               "title": "Веб-разработчик",
               "period": "Июнь 2019 — по настоящее время",
@@ -119,7 +119,7 @@
             },
             {
               "logoUrl": "https://sun5-3.userapi.com/s/v1/ig2/bhzXxDQZtohU-YsHtKjKdEcUxynxxmRjrRxf0mdnm3ta99SYt0z96sEDn3p9fwFQpsMpIFbOlcA7JBCJXe0Amuyz.jpg?size=50x50&quality=95&crop=0,0,600,600&ava=1",
-              "nameSubject": "СКБ Приморья Примсоцбанк",
+              "nameSubject": "Примсоцбанк",
               "location": "Владивосток",
               "title": "Веб-программист",
               "period": "Февраль 2018 — июнь 2019",
@@ -175,7 +175,7 @@
           "blocks": [
             {
               "logoUrl": " https://s5o.ru/storage/dumpster/2/c6/f6c354462b412307fe0f689b3733b.png",
-              "nameSubject": "Bot",
+              "nameSubject": "",
               "location": "Создатель",
               "title": "Неофициальный Бот Sport.Ru",
               "link": "http://t.me/sportsru_football_noofficial_bot",
