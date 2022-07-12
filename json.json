@@ -174,11 +174,11 @@
           "slug": "project",
           "blocks": [
             {
-              "logoUrl": " https://s5o.ru/storage/dumpster/2/c6/f6c354462b412307fe0f689b3733b.png",
-              "nameSubject": "",
+              "logoUrl": " https://cdn4.telegram-cdn.org/file/E4nfhnXXy0vjYFeSVTpaT939Rz64Ibu_nEdApUzOG0M2cS_mjg_G9IcEWa43VbFaJcKZpXcm9h3ejbaPYlzTm-7U1mCTa4jW9YBafyZXOyz2A1LGAlsV0Wy7ZOgypdYCUUZOJjuc0TrZQR8gxDF_AiZv6t5eOQC-00C5C4FKGnJ5nJ-EuZByvxXDJezv25NEvXSZyqY-bS_2_4J3YlWmnVWuveS-XRkUvFa6EgE-LHCo_PYbUKnwgkQcqi2M6X38ael8VX4du6yAtF8YLiOUu5I9zs3Plcx7drzCnQXB9KRp-8fYsr4jMg_z-G5Gu5VavcrxMS9ebYdi6whCIrd_Tw.jpg",
+              "nameSubject": "Bot",
               "location": "Создатель",
-              "title": "Неофициальный Бот Sport.Ru",
-              "link": "http://t.me/sportsru_football_noofficial_bot",
+              "title": "Football Scores ⚽️",
+              "link": "https://t.me/scoresfootball_bot",
               "descriptions": [
                 {
                   "title": "",
