@@ -33,7 +33,7 @@ const activeBlock = ref<string | 'resume' | 'project'>(hash[1] || 'resume');
           <a
             :href="`#${block.slug}`"
             @click="activeBlock = block.slug"
-            :class="`menu-link${(activeBlock === block.slug) ? '-active': ''}`"
+            :class="`menu-link${(activeBlock === block.slug) ? '-active' : ''}`"
             class="menu-link-hover cursor-pointer"
           >{{ block.title }}</a>
         </li>
