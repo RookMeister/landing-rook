@@ -96,7 +96,8 @@
                   "text": "<ul class='list-disc ml-5'><li>Занимался всем с нуля.</li><li>Участвовал в написании бекенд методов</li><li>Был написан чат (Бекенд, Фронтенд) с использованием Mongo и WebSokets</li></ul>"
                 },
                 {
-                  "title": "Технологии, text: Vue, Nodejs, Mongo, Typescript, Nuxt, Koa, Redis, Socket.IO, Docker"
+                  "title": "Технологии:",
+                  "text": "Vue, Nodejs, Mongo, Typescript, Nuxt, Koa, Redis, Socket.IO, Docker"
                 }
               ]
             },
@@ -113,7 +114,8 @@
                   "text": "<ul class='list-disc ml-5'><li>Опыт в работе с Docker и Typyscript</li><li>Разработал гибкий компонент карусели.</li><li>Разработал UI Kit с множеством базовых компонентов на базе Storybook по макетам в Figma</li><li>Занимался архитектурой нового СПА (Nuxt) приложения сайта hyperauto.ru с использованием SSR и в приоритете на мобильной версии.</li></ul>"
                 },
                 {
-                  "title": "Технологии, text: Vue, Typescript, Nuxt, Docker"
+                  "title": "Технологии:",
+                  "text": "Vue, Typescript, Nuxt, Docker"
                 }
               ]
             },
