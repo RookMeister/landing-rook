@@ -13,7 +13,7 @@ const { information, skills } = props.leftSide;
         <img :src="information.avatar" alt="Avatar" class="user-photo">
         <div class="text-lg font-semibold mb-1.5">{{ information.name }}</div>
         <div class="text-sm text-gray-400 mb-7">{{ information.position }}</div>
-        <div class="flex group print:hidden">
+        <!-- <div class="flex group print:hidden">
           <button class="download-btn">Скачать CV</button>
           <button class="download-btn-icon">
             <svg class="h-6 w-6" fill="none"
@@ -22,7 +22,7 @@ const { information, skills } = props.leftSide;
                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
 

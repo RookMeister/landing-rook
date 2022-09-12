@@ -17,8 +17,8 @@
           "text": "4+ года "
         },
         {
-          "title": "Релокация",
-          "text": "Санкт-Петербург"
+          "title": "Статус",
+          "text": "Не ищу"
         }
       ]
     },
@@ -43,7 +43,7 @@
   "rightSide": {
     "about": {
       "titleBlock": "Обо мне",
-      "bio": "Я занимаюсь frontend разработкой уже 5 лет и всё это время работаю со Vue Js. Рассматриваю предложения связанные с экосистемой Vue. Есть опыт и backend разработки с использованием nodejs и mongo. Был опыт в построении UI Kit. Есть опыт связанный с Telegram Bot. Готов к перезду (предпочитаемый вариант). На данный момент хочу и дальше развиваться как frontend специалист. Люблю создавать красивые интерфейсы.",
+      "bio": "Я занимаюсь frontend разработкой уже 5 лет и всё это время работаю со Vue Js.",
       "mail": "artemhmelwork@gmail.com",
       "socials": [
         {
@@ -174,7 +174,7 @@
           "slug": "project",
           "blocks": [
             {
-              "logoUrl": " https://cdn4.telegram-cdn.org/file/E4nfhnXXy0vjYFeSVTpaT939Rz64Ibu_nEdApUzOG0M2cS_mjg_G9IcEWa43VbFaJcKZpXcm9h3ejbaPYlzTm-7U1mCTa4jW9YBafyZXOyz2A1LGAlsV0Wy7ZOgypdYCUUZOJjuc0TrZQR8gxDF_AiZv6t5eOQC-00C5C4FKGnJ5nJ-EuZByvxXDJezv25NEvXSZyqY-bS_2_4J3YlWmnVWuveS-XRkUvFa6EgE-LHCo_PYbUKnwgkQcqi2M6X38ael8VX4du6yAtF8YLiOUu5I9zs3Plcx7drzCnQXB9KRp-8fYsr4jMg_z-G5Gu5VavcrxMS9ebYdi6whCIrd_Tw.jpg",
+              "logoUrl": "blob:https://web.telegram.org/ce2e6378-d99f-468f-abda-7606d9278dca",
               "nameSubject": "Bot",
               "location": "Создатель",
               "title": "Football Scores ⚽️",
