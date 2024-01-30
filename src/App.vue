@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { leftSide, rightSide } from '../data.json'
 import LeftSideVue from './components/LeftSide.vue';
 import RightSideVue from './components/RightSide.vue';
 
@@ -21,8 +20,6 @@ fetch(import.meta.env.VITE_JSON_URL, {
   leftSideData.value = leftSide;
   rightSideData.value = rightSide;
 })
-leftSideData.value = leftSide;
-rightSideData.value = rightSide;
 </script>
 
 <template>
