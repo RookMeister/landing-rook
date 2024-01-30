@@ -14,7 +14,7 @@
         },
         {
           "title": "Опыт",
-          "text": "6+ года "
+          "text": "6+ лет"
         },
         {
           "title": "Статус",
@@ -189,19 +189,6 @@
           "is": "project",
           "slug": "project",
           "blocks": [
-            {
-              "logoUrl": "blob:https://web.telegram.org/ce2e6378-d99f-468f-abda-7606d9278dca",
-              "nameSubject": "Bot",
-              "location": "Создатель",
-              "title": "Football Scores ⚽️",
-              "link": "https://t.me/scoresfootball_bot",
-              "descriptions": [
-                {
-                  "title": "",
-                  "text": "Бот с помощью которого можно следить за расписанием и результатом футбольных матчей и обзорами к ним."
-                }
-              ]
-            },
             {
               "logoUrl": " https://kt.tc/images/logo/android/android-chrome-192x192.svg",
               "nameSubject": "E-commerce",
