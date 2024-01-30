@@ -10,15 +10,15 @@
       "array": [
         {
           "title": "Местоположение",
-          "text": "Владивосток"
+          "text": "Санкт-Петербург"
         },
         {
           "title": "Опыт",
-          "text": "4+ года "
+          "text": "6+ года "
         },
         {
           "title": "Статус",
-          "text": "Не ищу"
+          "text": "Рассмотрю"
         }
       ]
     },
@@ -43,16 +43,12 @@
   "rightSide": {
     "about": {
       "titleBlock": "Обо мне",
-      "bio": "Я занимаюсь frontend разработкой уже 5 лет и всё это время работаю со Vue Js.",
+      "bio": "Я занимаюсь frontend разработкой уже 6 лет.",
       "mail": "artemhmelwork@gmail.com",
       "socials": [
         {
           "service": "telegram",
           "link": "https://t.me/RookMeister "
-        },
-        {
-          "service": "twitter",
-          "link": "https://twitter.com/RookMeister6 "
         },
         {
           "service": "github",
@@ -79,6 +75,24 @@
           "is": "resume",
           "slug": "expirience",
           "blocks": [
+             {
+              "logoUrl": "https://extra-cdn.sbermegamarket.ru/static/dist/images/logo-mega-desktop.1d57cb.svg",
+              "nameSubject": "Группа е-com компаний (МегаМаркет)",
+              "location": "Санкт-Петербург",
+              "title": "Frontend разработчик",
+              "period": "Сентябрь 2022 — по настоящее время",
+              "timeJob": "Full time",
+              "descriptions": [
+                {
+                  "title": "Направление",
+                  "text": "Отдел логисти"
+                },
+                {
+                  "title": "",
+                  "text": "Занимаюсь разработкой клиенского интерфейса для управления логистики, так же сопутствующей настройкой гитлаб окружения."
+                },
+              ]
+            },
             {
               "logoUrl": "https://kt.tc/images/logo/android/android-chrome-192x192.svg",
               "nameSubject": "КТТС Маркет",
@@ -106,7 +120,7 @@
               "nameSubject": "Сократ маркетинг",
               "location": "Владивосток",
               "title": "Веб-разработчик",
-              "period": "Июнь 2019 — по настоящее время",
+              "period": "Июнь 2019 — Сентфбрь 2022",
               "timeJob": "Full time",
               "descriptions": [
                 {
