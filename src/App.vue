@@ -16,7 +16,7 @@ fetch('/data.json', {
 }).then(function(response) {
   return response.json();
 }).then(function(data) {
-  const { record: { leftSide, rightSide } } = data;
+  const { leftSide, rightSide } = data;
   leftSideData.value = leftSide;
   rightSideData.value = rightSide;
 })
