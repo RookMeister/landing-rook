@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { leftSide, rightSide } from '../json.json'
+import { leftSide, rightSide } from '../data.json'
 import LeftSideVue from './components/LeftSide.vue';
 import RightSideVue from './components/RightSide.vue';
 
@@ -8,22 +8,21 @@ import RightSideVue from './components/RightSide.vue';
 const leftSideData = ref<any>(null);
 const rightSideData = ref<any>(null);
 
-// fetch(import.meta.env.VITE_JSON_URL, {
-//   method: "GET",
-//   headers: {
-//     "Accept": "*/*",
-//     "X-Master-Key": '$2b$10$' + import.meta.env.VITE_JSON_KEY
-//     }
-// }).then(function(response) {
-//   return response.json();
-// }).then(function(data) {
-//   const { record: { leftSide, rightSide } } = data;
-//   leftSideData.value = leftSide;
-//   rightSideData.value = rightSide;
-// })
+fetch(import.meta.env.VITE_JSON_URL, {
+  method: "GET",
+  headers: {
+    "Accept": "*/*",
+    "X-Master-Key": '$2b$10$' + import.meta.env.VITE_JSON_KEY
+    }
+}).then(function(response) {
+  return response.json();
+}).then(function(data) {
+  const { record: { leftSide, rightSide } } = data;
+  leftSideData.value = leftSide;
+  rightSideData.value = rightSide;
+})
 leftSideData.value = leftSide;
 rightSideData.value = rightSide;
-
 </script>
 
 <template>
