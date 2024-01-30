@@ -7,7 +7,7 @@ import RightSideVue from './components/RightSide.vue';
 const leftSideData = ref<any>(null);
 const rightSideData = ref<any>(null);
 
-fetch(import.meta.env.VITE_JSON_URL, {
+fetch('/data.json', {
   method: "GET",
   headers: {
     "Accept": "*/*",
